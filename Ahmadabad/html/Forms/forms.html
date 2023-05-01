@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Forms</title>
+</head>
+<body>
+    <h2> Forms</h2>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Tejaswini"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Taywade"><br><br>
+        <input type="submit" value="Submit">
+    </form> 
+
+
+    <h2>Radio Buttons</h2>
+    <p>choose your favourate subject</p>
+    <form>
+         <input type="radio" id="html" name="fav_language" value="HTML">
+         <label for="html">Marathi</label><br>
+         <input type="radio" id="css" name="fav_language" value="CSS">
+         <label for="css">English</label><br>
+         <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+         <label for="javascript">Hindi</label>
+    </form>
+    
+    
+    <h2>Checkboxes</h2>
+    <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+    <form action="/action_page.php">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a mobile</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a watch</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>The form target attribute</h2>
+    <p>When submitting this form, the result will be opened in a new browser tab:</p>
+    <form action="/action_page.php" target="_blank">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="Tejas"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Taywade"><br><br>
+      <input type="submit" value="Submit">
+    </form> 
+
+    <h2>The  Get method Attribute</h2>
+
+<p>This form will be submitted using the GET method:</p>
+
+<form action="/action_page.php" target="_blank" method="get">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Trifali"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Taywade"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<p>After you submit, notice that the form values is visible in the address bar of the new browser tab.</p>
+
+<h2>The method Attribute</h2>
+<p>This form will be submitted using the POST method:</p>
+<form action="/action_page.php" target="_blank" method="post">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Riya "><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Umekar"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Then, try to set autocomplete to "off".</p>
+<form action="/action_page.php" autocomplete="on">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email"><br><br>
+  <input type="submit">
+</form>
+
+<h1>The form novalidate attribute</h1>
+<p>The novalidate attribute indicates that the form input is not to be validated on submit:</p>
+<form action="/action_page.php" novalidate>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit">
+</form>
+
+<h2>The input Element</h2>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h2>selection of Element</h2>
+<p>The select element defines a drop-down list:</p>
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <input type="submit">
+</form>
+
+<h2>Pre-selected Option</h2>
+<p>selection of the types of car </p>
+<form action="/action_page.php">
+  <label for="cars">Choose the following  car:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat" selected>Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <input type="submit">
+</form>
+
+<h2>Visible Option Values</h2>
+<p>Use the size attribute to specify the number of visible values.</p>
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars" size="3">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select><br><br>
+  <input type="submit">
+</form>
+
+<h2>Visible Option Values</h2>
+<p>visiblity the of location</p>
+<form action="/action_page.php">
+  <label for="cars">Choose a location:</label>
+  <select id="cars" name="cars" size="3">
+    <option value="volvo">Chikhaldara</option>
+    <option value="saab">Mahabaleshwar</option>
+    <option value="fiat">Tryambakeshwar</option>
+    <option value="audi">Omkareshwar</option>
+  </select><br><br>
+  <input type="submit">
+</form>
+
+<h2>Textarea</h2>
+<p>Textarea to locate the power </p>
+<form action="/action_page.php">
+  <textarea name="message" rows="10" cols="30">tiger was running in the garden </textarea>
+  <br><br>
+  <input type="submit">
+</form>
+
+<h2>Styling Textarea</h2>
+<p>Use CSS to modify the size :</p>
+<form action="/action_page.php">
+  <textarea name="message" style="width:200px; height:600px;">ram will play cricket in the best garden</textarea>
+  <br>
+  <input type="submit">
+</form>
+
+<h2>The button Element</h2>
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+<h2>Grouping Form Data with Fieldset</h2>
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Vedant"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Taywade"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<h2>The datalist Element</h2>
+<p>varoius country</p>
+<form action="/action_page.php">
+  <input list="country" name="country">
+  <datalist id="country">
+    <option value="India">
+    <option value="Chin">
+    <option value="America">
+    <option value="England">
+    <option value="saudi Arebia">
+  </datalist>
+  <input type="submit">
+</form>
+
+<h2>The output Element</h2>
+<p>calculation</p>
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  8900 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+<p><strong>Note :</strong>to privide the prior output.</p>
+
+<h2>Text field</h2>
+<p>The <strong>input type="text"</strong> defines a one-line text input field:</p>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<p>Note to fill the form</p>
+<p>Also note that size of character is 20</p>
+
+<h2>Password field</h2>
+<p>The <strong>input type="password"</strong> defines a password field:</p>
+<form action="/action_page.php">
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<p> Password will be provided in these section</p>
+
+<h2>Submit Button</h2>
+<p>The <strong>input type="submit"</strong> visitors to submit the specific data </p>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Anushka "><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Lunge"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+<p>submition  ccompleted  </p>
+
+<form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Ram"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Lunge"><br><br>
+    <input type="submit">
+</form> 
+
+<h2>Reset Button</h2>
+<p>The <strong>input type="reset"</strong> it can reset to setup all the fields are double </p>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="sarang "><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="taywade"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form> 
+<p>if i cleak the reset button then submit the data to the new set of type </p>
+
+<h2>Show a Color Picker</h2>
+<p>The <strong>input type="color"</strong> choose the  color whcich you like</p>
+<form action="/action_page.php">
+  <label for="favcolor">Select the favorite color</label>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+  <input type="submit" value="Submit">
+</form>
+<p><b>Note:</b> My favorite color is red  </p>
+
+<h2>Date Field</h2>
+<p>The <strong>input type="date"</strong> is used for input fields that should contain a date.</p>
+<form action="/action_page.php">
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+  <input type="submit" value="Submit">
+</form>
+<p><strong>Note:</strong> type="date" is not supported in Internet Explorer 11 or prior Safari 14.1.</p>
+
+<h2>Date Field Restrictions</h2>
+<p>the date of restiction</p>
+<form action="/action_page.php">
+  <label for="datemin">Enter a date after 1999-12-18:</label>
+  <input type="date" id="datemin" name="datemin" min="1999-12-19"><br><br>
+  <label for="datemax">Enter a date before 1990-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1990-12-31"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h2>Local Date Field</h2>
+<p>The <strong>input type="datetime-local"</strong> </p>
+<form action="/action_page.php">
+  <label for="birthdaytime">Birthday (date and time):</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+  <input type="submit" value="Submit">
+</form>
+
+<h2>Display an Image as the Submit button</h2>
+<form action="/action_page.php">
+  <label for="fname">First name: </label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name: </label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="image" src="https://www.shutterstock.com/image-vector/submit-button-260nw-390234469.jpg" alt="Submit" width="48" height="48">
+</form>
+<p><b>Note:</b> the image has been submit as link</p>
+
+<h1>File upload</h1>
+<p>uploaded the file with the help of file manager </p>
+<form action="/action_page.php">
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1> input value attribute</h1>
+<p>input in the form of value attribute</p>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="kashvi"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="ganjare"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1>The input readonly attribute</h1>
+<p>input will be rangdom attribute</p>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="monika" readonly><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Aakhare"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1>input disabled attribute</h1>
+<p>input will not be able see means it disabled  </p>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="divya" disabled><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Thvali"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1>The input size attribute</h1>
+<p>it can be show the size Attribute  </p>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" size="4"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1>The input maxlength attribute</h1>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+<h1>The input min and max attributes</h1>
+<p>input  can be minimum and maximun attributes</p>
+<form action="/action_page.php">
+  <label for="datemax">Enter a date before 1993-05-28:</label>
+  <input type="date" id="datemax" name="datemax" max="1993-05-27"><br><br>
+  <label for="datemin">Enter a date after 2012-12-19:</label>
+  <input type="date" id="datemin" name="datemin" min="2012-12-20"><br><br>
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+   <input type="submit" value="Submit">
+</form>
+
+<h1>The input multiple attributes</h1>
+<p>multiple input of attributes</p>
+<form action="/action_page.php">
+  <label for="files">Select files:</label>
+  <input type="file" id="files" name="files" multiple><br><br>
+  <input type="submit" value="Submit">
+</form>
+<p> in these method the input multiple attributes </p>
+
+<h1>The input pattern attribute</h1>
+<p> show the input  various pattern</p>
+<form action="/action_page.php">
+  <label for="country_code">Country code:</label>
+  <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<p><strong>Note:</strong> code of the country it will varified by specific country</p>
+
+<h1>The input placeholder attribute</h1>
+<p> attribute of the input placeholder</p>
+<form action="/action_page.php">
+  <label for="phone">Enter a phone number:</label>
+  <input type="tel" id="phone" name="phone" placeholder="333-89-843" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1>The input step attribute</h1>
+<p>step attribute it contain the input type </p>
+<form action="/action_page.php">
+  <label for="points">Points:</label>
+  <input type="number" id="points" name="points" step="3">
+  <input type="submit" value="Submit">
+</form>
+
+<h1>The input autofocus attribute</h1>
+<p>autofocus </p>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" autofocus><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1>The input list attribute</h1>
+<p>list of input attribute </p>
+<form action="/action_page.php">
+  <input list="city" name="city">
+  <datalist id="city">
+    <option value="Amravati">
+    <option value="Nashik">
+    <option value="Nagpur">
+    <option value="Mumbai">
+    <option value="Satara">
+  </datalist>
+  <input type="submit" value="Submit">
+</form>
+<p><b>venue:</b>All are famous city in Maharshra </p>
+
+<h1>The input form method Attribute</h1>
+<p>input of tge form method attribute </p>
+<form action="/action_page.php" method="get" target="_blank">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit using GET">
+  <input type="submit" formmethod="post" value="Submit using POST">
+</form>
+
+<h1>The input formtarget attribute</h1>
+<p>formtarget is the  target Attribute</p>
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formtarget="_blank" value="Submit to the new window/tab">
+</form>
+
+<h1>The input form formnovalidate attribute</h1>
+<form action="/action_page.php">
+  <label for="email">Enter your email</label>
+  <input type="email" id="email" name="email" required><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+</form>
+<p><strong>Note:</strong>formnovalidate attribute is in input type  </p>
+
+<p>successfully submited </p>
+<form action="/action_page.php" novalidate>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  <input type="submit" value="Submit">
+</form>
+<p><strong>Type </strong> These are the novalidate type are successfully submited </p>
+
+
+
+</body>
+</html>
+

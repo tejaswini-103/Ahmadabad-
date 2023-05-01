@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    you have sussfully set the canvas</canvas><br>
+
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        successfully run the canvas in html  chrome browser </canvas>
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(200,100);
+        ctx.stroke();
+        </script><br>
+    
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        canvas are interepted so disconnect.</canvas>
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+        </script><br>
+        
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+            canvas can be successfully created </canvas>
+            <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.fillText("Hello Tejaswini ",10,50);
+            </script><br>
+    
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        file not supported the canvas </canvas>
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("Hello Tejaswini",10,50);
+        </script>
+        
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+          canvas can be created.</canvas>
+            
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.strokeText("Hello Tejaswini",10,50);
+        </script>
+            
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+                canvas are ready to run.</canvas>
+                
+                <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                
+                // Create gradient
+                var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+                grd.addColorStop(0,"blue   ");
+                grd.addColorStop(1,"white");
+                
+                // Fill with gradient
+                ctx.fillStyle = grd;
+                ctx.fillRect(10,10,150,80);
+        </script>
+                
+        
+</body>
+</html>
